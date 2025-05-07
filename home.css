@@ -1,0 +1,102 @@
+.home{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.alkatra-text{
+  font-family: "Alkatra", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} 
+.home__title{
+    font-size: 2rem;
+    margin-bottom: 0;
+    font-family: "Alkatra", system-ui;
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateY(20px); /* Desplazado hacia abajo */
+    animation: slideIn 2s ease-out forwards; /* Animación */
+    word-wrap: break-word;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.home__content{
+    width: 100%;
+    min-height: 70vh;
+    padding-left: 10px;
+    padding-right: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.home__button{
+    font-weight: bold;
+    display: inline-block;
+   
+}
+.home__description{
+    margin-top: 2rem;
+    line-height: 2;
+}
+.home__focus{
+  display: inline-block; /* Necesario para que transform funcione */
+  animation: moveLeft 1.3s normal infinite;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+
+/* Definición de la animación */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Comienza desplazado hacia abajo */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Termina en su posición original */
+  }
+}
+
+/* Definición de la animación */
+@keyframes moveLeft {
+  0% {
+    transform: translateX(20px); /* Comienza en su posición original */
+  }
+  100% {
+    transform: translateX(0); /* Se mueve 20px hacia la izquierda */
+  }
+}
+/*------HOME QUERIES------*/
+@media (min-width: 600px) {
+    .home{
+        height: 90vh;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .home__title{
+        font-size: 2rem;
+        margin-bottom: 0;
+        animation: slideIn 2s ease-out forwards; /* Animación */
+    }
+    .home__content{
+
+        max-width: 70%;
+    }
+    .home__description{
+        text-align: left;
+    }
+    .home__button{
+        padding: 0;
+        background-color: rgba(87, 87, 87, 0.137);
+        color: #48e;
+        cursor: pointer;
+    }
+}
+

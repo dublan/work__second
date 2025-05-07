@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacto.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+      emailjs.init('HFg1p_1pytfTDhHWF'); // Reemplaza 'TU_PUBLIC_KEY' con tu clave pública real
+  })();
+</script>
+
+  </head>
+<body>
+  <header class="header">
+    <input type="checkbox" id="open-menu" class="header__checkbox">
+    <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+    <div class="header__logo-container">
+        <img class="header__logo" src="https://cdn-icons-png.flaticon.com/512/12114/12114212.png" alt="Logo Azul Claro">
+    </div>
+    <div class="header__logo-container_cc">
+      <img class="header__logo-cc" src="paleta-de-color (1).png" alt="Logo Azul Claro" id="btn">
+    </div>
+    <nav class="header__nav">
+        <ul class="header__nav-list">
+            <li class="header__nav-item">
+                <a class="header__text" href="index.html">Inicio</a>
+            <li class="header__nav-item">
+                <a class="header__text" href="about.html">About</a>
+            </li>
+            <li class="header__nav-item">
+                <a class="header__text" href="proyect.html">Portafolio</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+    <section class="form">
+        <h2 class="form__title">CONTACT</h2>
+        <form class="form__form">
+          <div class="form__input-container">
+            <label>nombre
+              <input type="text" placeholder="jhon" id="nombre">
+            </label>
+          </div>
+          <div class="form__input-container">
+            <label>apellido
+              <input type="text" placeholder="doe" id="apellido">
+            </label>
+          </div>
+          <div class="form__input-container">
+            <label>email
+              <input type="email" placeholder="example@gmil.com" id="email">
+            </label>
+          </div>
+          <div class="form__input-container">
+            <label>telefono
+              <input type="text" placeholder="3123456789" id="telefono">
+            </label>
+          </div>
+          <div class="form__input-container">
+            <label>mensaje
+              <textarea placeholder="your mensage" id="mensaje"></textarea>
+            </label>
+          </div>
+          <div class="form__input-container">
+           <input type="submit" value="Enviar">
+          </div>
+        </form>
+      </section>
+      <footer class="footer">
+        <div class="footer__content">
+            <p class="footer__text">Sígueme en mis redes sociales:</p>
+            <div class="footer__icons">
+                <a href="https://github.com" target="_blank" class="footer__text footer__icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="footer__text footer__icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="footer__text footer__icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <p class="footer__text">Contacto: <a href="mailto:dublanjesusbarranco@gmail.com" class="footer__text">dublanjesusbarranco@gmail.com</a></p>
+            <p class="footer__text">© 2025 Doublan Barranco. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+<script src="notas.js"></script>
+<script src="formulario.js"></script>
+</html>
